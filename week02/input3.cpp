@@ -1,0 +1,14 @@
+#include "../std_lib_facilities.h"
+
+int main () {
+
+    cout << "Please enter your name and your age!" << endl;
+
+    string first_name;
+    int age;
+
+    cin >> first_name >> age;
+    cout << "Hello, " << first_name << "! (" << age << ")" << endl;
+
+    return 0;
+}
