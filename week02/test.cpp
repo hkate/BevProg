@@ -7,7 +7,7 @@ int main () {
     int b = c;
 
     if (a != b)
-        cout << "a!=b a " << a << " (altgr w)4 b = " << b <<endl;
+        cout << "a!=b a " << a << " |||| b = " << b <<endl;
     
     return 0;
 }
