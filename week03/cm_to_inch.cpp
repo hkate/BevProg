@@ -2,7 +2,7 @@
 
 int main() {
 
-    constexpr double cm_per_inch = 2.54;
+    const double cm_per_inch = 2.54;
 
     double length = -1;
     char unit = 0;
