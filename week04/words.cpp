@@ -4,7 +4,7 @@ int main () {
 
     vector<string> words;
 
-    for(string word; cin >> word;){
+    for(string word; cin >> word && word != "quit";){
         words.push_back(word);
     }
 
