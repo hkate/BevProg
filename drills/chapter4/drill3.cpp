@@ -2,8 +2,8 @@
 
 int main() {
 
-    vector<int>numbers;
-    int number=0;
+    vector<double>numbers;
+    double number=0;
 
     cout << "Enter two numbers"<< endl;
 
@@ -23,6 +23,8 @@ int main() {
 
     if (numbers[0] == numbers[1]){
         cout << "The numbers are equal." << endl;
+    } else if (abs(numbers[0] - numbers[1]) < 0.1){
+        cout << "The numbers are almost equal." << endl;
     }
 
     cout << "If you want to exit type | "<< endl;
