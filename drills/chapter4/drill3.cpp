@@ -20,6 +20,11 @@ int main() {
     cout << numbers[i] << endl;
 
     }   
+
+    if (numbers[0] == numbers[1]){
+        cout << "The numbers are equal." << endl;
+    }
+
     cout << "If you want to exit type | "<< endl;
 
     for(string kilep; cin >> kilep && kilep != "|";){
