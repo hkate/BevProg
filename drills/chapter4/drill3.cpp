@@ -2,6 +2,7 @@
 
 int main() {
 
+/*
     vector<double>numbers;
     double number=0;
 
@@ -32,5 +33,24 @@ int main() {
     for(string kilep; cin >> kilep && kilep != "|";){
     }
 
+*/
 
+    double smallest=std::numeric_limits<double>::max();
+    double largest=std::numeric_limits<double>::min();
+    double number;
+    
+    cout << "Enter a number."<< endl;
+
+    while (cin >> number){
+        cout << number << endl;
+        if (number < smallest) {
+        smallest = number;
+        cout << "is the smallest so far." << endl;
+        }
+        if (number > largest) {
+        largest = number;
+        cout << "is the largest so far." << endl;
+        }
+
+    }
 }
