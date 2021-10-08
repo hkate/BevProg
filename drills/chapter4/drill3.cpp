@@ -38,11 +38,30 @@ int main() {
     double smallest=std::numeric_limits<double>::max();
     double largest=std::numeric_limits<double>::min();
     double number;
-    
+    string unit;
+    vector<string>units = {"cm","in", "ft", "m"};
+    const double cm_per_inch = 2.54;
+    const double cm_per_meter = 100;
+    const double inch_per_ft = 12;
+    char accepted = 'n';
+
     cout << "Enter a number."<< endl;
 
-    while (cin >> number){
+    while (cin >> number >> unit){
         cout << number << endl;
+        for(int i = 0; i < units.size(); i++){
+            if(unit == units[i]) {
+                accepted = 'i';
+                }
+                
+        }
+        if(accepted == 'n') {
+        cout << "Illegal unit!" << endl;
+            abort();
+        }
+
+        accepted = 'n';
+
         if (number < smallest) {
         smallest = number;
         cout << "is the smallest so far." << endl;
