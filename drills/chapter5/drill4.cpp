@@ -55,7 +55,29 @@ int main(){
         int x = 2000; int c3 = x; if (c3==2000) cout << "17. Success!\n";
 
         //18. string s = "Success!\n"; for (int i=0; i<10; ++i) cout << s[i];
-        string s6 = "18. Success!\n"; for (int i=0; i<10; ++i) cout << s6;
+        string s6 = "18. Success!\n"; for (int i=0; i<10; ++i); cout << s6;
+
+        //19. vector v(5); for (int i=0; i<=v.size(); ++i) ; cout << "Success!\n";
+        vector<int> v5(5); for (int i=0; i<=v5.size(); ++i) ; cout << "19. Success!\n";
+
+        //20. int i=0; int j = 9; while (i<10) ++j; if (j<i) cout << "Success!\n";
+        int i=0; int j = 9; while (i<10) ++i; if (j<i) cout << "20. Success!\n";
+
+        //21. int x = 2; double d = 5/(x–2); if (d==2*x+0.5) cout << "Success!\n";
+        int x2 = 2; double d = 5/(x2-1); if (d==2*x2+1) cout << "21. Success!\n";
+
+        //22. string<char> s = "Success!\n"; for (int i=0; i<=10; ++i) cout << s[i];
+        string s7 = "22. Success!\n"; for (int i=0; i<=13; ++i) cout << s7[i];
+
+        //23. int i=0; while (i<10) ++j; if (j<i) cout << "Success!\n";
+        int i2=0; while (i2<10) ++i2; if (8<i2) cout << "23. Success!\n";
+
+        //24. int x = 4; double d = 5/(x–2); if (d=2*x+0.5) cout << "Success!\n";
+        int x3 = 4; double d2 = 5/(x3-3); if (d2==2*x3/(1+1)+1) cout << "24. Success!\n";
+    
+        //25. cin << "Success!\n";
+        cout << "25. Success!\n";
+
 
         keep_window_open();
         return 0;
